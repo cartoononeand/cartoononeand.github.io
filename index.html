@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>OUR SPONSORS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+
+<style>
+.tagholder{
+  height:50px;
+  background-color:black;
+
+display:flex;  
+    margin-top: 50px;
+}
+.tag{
+  margin:auto;
+  width:200px;
+  background-color:black;
+  height:50px;
+  display:flex;
+  
+}
+a{outline:1px white solid;
+  margin:auto;
+  display:flex;
+  text-decoration:none;
+  color:white;
+}
+a span{
+  margin:auto;
+  
+}
+*{margin:0px;
+padding:0px;}
+body{
+background-color:black;
+height:100vh;
+width:100vw;
+display:flex;}
+.mySlides {display:none;}
+h2,h6{
+text-align:center;
+color:white;}
+.centermydiv{margin:auto;}
+h6{margin-bottom: 29px;}
+</style>
+</head>
+
+<body>
+
+
+
+<div class="centermydiv" style="max-width:500px">
+  <div class="mySlides">
+<h2>Photography contest</h2>
+<h6>Sponsored by</h6>
+<img src="cone.png" style="width:100%">
+<div class="tagholder">
+  
+  <a href=""><div class="tag"><span>
+    POSTER
+    </span></div></a>
+  
+</div>
+</div>
+
+ <div class="mySlides">
+<h2>Photography contest</h2>
+<h6>Sponsored by</h6>
+ <img src="ctwo.png" style="width:100%">
+<div class="tagholder">
+  
+  <a href=""><div class="tag"><span>
+    POSTER
+    </span></div></a>
+  
+</div>
+</div>
+
+ 
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 4000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html>
+
